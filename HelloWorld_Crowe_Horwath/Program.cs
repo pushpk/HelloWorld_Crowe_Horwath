@@ -14,8 +14,7 @@ namespace HelloWorld_Crowe_Horwath
     public class Program
     {
         public static async Task Main(string[] args)
-        {
-                       
+        {                       
             //Pluggin in Configuration
             var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json").Build();
 
@@ -27,6 +26,7 @@ namespace HelloWorld_Crowe_Horwath
             // API call
             string apiGreetingResponse = await GetGreetingsFromAPI(configuration);
 
+            //Get Target to write greeting from Config
             ITarget target = services.GetRequiredService<ITarget>();
 
             // Print message

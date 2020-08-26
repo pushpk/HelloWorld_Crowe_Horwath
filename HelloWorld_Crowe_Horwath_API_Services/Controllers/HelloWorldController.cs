@@ -12,12 +12,10 @@ namespace HelloWorld_Crowe_Horwath_API_Services.Controllers
     [Route("[controller]")]
     public class HelloWorldController : ControllerBase
     {
-        private readonly ILogger<HelloWorldController> _logger;
         private readonly IGreeting _greeting;
 
-        public HelloWorldController(ILogger<HelloWorldController> logger, IGreeting greeting)
+        public HelloWorldController(IGreeting greeting)
         {
-            _logger = logger;
             _greeting = greeting;
         }
 
