@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HZmmlBFFzDjFUG/rWpMnFrdJQL4VKp3DufkDJnmMMbde8Dcttv03HZnNt/+Lc4uPrwLWdJQiM4bgtaojiTP9Bg==",
+  "success": true,
+  "projectFilePath": "P:\\Projects\\Repo\\HelloWorld_Crowe_Horwath\\HelloWorld_Crowe_Horwath\\HelloWorld_Crowe_Horwath.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pushp\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
