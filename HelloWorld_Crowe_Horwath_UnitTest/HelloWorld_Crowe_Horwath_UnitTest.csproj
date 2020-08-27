@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HelloWorld_Crowe_Horwath\HelloWorld_Crowe_Horwath.csproj" />
+    <ProjectReference Include="..\HelloWorld_Crowe_Horwath_API_Services\HelloWorld_Crowe_Horwath_API_Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>

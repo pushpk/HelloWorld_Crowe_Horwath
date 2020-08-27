@@ -2,6 +2,8 @@ using HelloWorld_Crowe_Horwath;
 using HelloWorld_Crowe_Horwath.AbstractTarget;
 using HelloWorld_Crowe_Horwath.ConcreteTarget;
 using HelloWorld_Crowe_Horwath.Factory;
+using HelloWorld_Crowe_Horwath_API_Services.Controllers;
+using HelloWorld_Crowe_Horwath_API_Services.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
@@ -26,10 +28,8 @@ namespace HelloWorld_Crowe_Horwath_UnitTest
         [TestMethod]
         public void Test_API()
         {
-
-            Task<string> task = Program.GetGreetingsFromAPI(configuration);
-            var response = task.Result;
-            Assert.AreEqual("Hello World", response);
+            HelloWorldController controller = new HelloWorldController(new HelloWorldGreeting());
+            APIAssert.AreEqual("Hello World", controller.Get());
         }
 
 
@@ -50,5 +50,6 @@ namespace HelloWorld_Crowe_Horwath_UnitTest
             Assert.IsNotNull(dbObj);
             Assert.IsInstanceOfType(dbObj, typeof(DatabaseTarget));
         }
+
     }
 }
